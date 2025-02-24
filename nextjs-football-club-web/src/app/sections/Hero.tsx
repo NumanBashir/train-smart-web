@@ -15,10 +15,10 @@ const Hero = () => {
         <div className="hero-overlay bg-opacity-60"></div>
         <div className="hero-content text-neutral-content text-start">
           <div className="max-w-3xl">
-            <h1 className="mb-5 text-5xl font-bold barlow">
+            <h1 className="mb-5 text-5xl font-bold barlow text-white">
               Velkommen til Taastrup FC
             </h1>
-            <p className="mb-5 barlow text-lg">
+            <p className="mb-5 barlow text-lg text-white">
               Hos Taastrup FC handler det om fællesskab, udvikling og passion
               for fodbold. Vi stræber efter at skabe et miljø, hvor spillere i
               alle aldre kan vokse både på og uden for banen. Uanset om du er
