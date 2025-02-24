@@ -2,3 +2,5 @@
 
 Sections
 - 
+
+- Use next/font/google, load fonts in layout.tsx
