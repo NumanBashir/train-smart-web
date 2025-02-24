@@ -1,1 +1,4 @@
-- Set up frontend project -- DONE
+- Navbar last element hover dropdown goes out of window
+
+Sections
+- 
