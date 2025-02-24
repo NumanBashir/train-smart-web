@@ -4,19 +4,15 @@ import Image from "next/image";
 const Navbar = () => {
   return (
     <>
-      <div className="navbar bg-green-600 text-white">
-        <div className="flex-1">
-          <a className="btn btn-ghost text-xl">
-            <Image
-              src="/assets/taastrupfclogo.png"
-              height={40}
-              width={40}
-              alt="Taastrup FC"
-            />
-            Taastrup FC
-          </a>
-        </div>
-        <div className="flex-none">
+      <div className="navbar bg-[#A8CB62] text-black relative flex justify-end">
+        <Image
+          src="/assets/taastrup_sort_tekst.png"
+          alt="Taastrup FC"
+          height={125}
+          width={125}
+          className="absolute top-2 left-2 z-10"
+        />
+        <div className="flex-none items-end">
           <ul className="menu menu-horizontal px-1">
             <li className="relative group">
               <a className="cursor-pointer flex items-center">
