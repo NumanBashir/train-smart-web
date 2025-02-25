@@ -1,6 +1,2 @@
 - Navbar last element hover dropdown goes out of window
-
-Sections
-- 
-
 - Use next/font/google, load fonts in layout.tsx
