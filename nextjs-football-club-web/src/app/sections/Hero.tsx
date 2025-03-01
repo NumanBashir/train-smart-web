@@ -32,7 +32,7 @@ export default async function Hero() {
         <div className="hero-content text-neutral-content text-start">
           <div className="max-w-3xl">
             <h1 className="mb-5 text-5xl font-bold barlow text-white">
-              {hero.heroTitle}
+              {hero.heroTitle} adas
             </h1>
             <div className="mb-5 barlow text-lg text-white">
               {Array.isArray(hero.body) && <PortableText value={hero.body} />}
