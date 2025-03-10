@@ -19,7 +19,7 @@ export const Sponsor = () => {
               <img
                 src={image.src}
                 alt={image.alt}
-                className="w-full h-full object-contain"
+                className="w-full h-full object-contain opacity-20 grayscale"
               />
             </div>
           ))}

@@ -4,6 +4,7 @@ import type { SanityImageSource } from "@sanity/image-url/lib/types/types";
 import React from "react";
 import { type SanityDocument } from "next-sanity";
 import { PortableText } from "next-sanity";
+import Link from "next/link";
 
 const HERO_QUERY = `*[_type == "heroImage"][0]`;
 
@@ -32,12 +33,14 @@ export default async function Hero() {
         <div className="hero-content text-neutral-content text-start">
           <div className="max-w-3xl">
             <h1 className="mb-5 text-5xl font-bold barlow text-white">
-              {hero.heroTitle} adas
+              {hero.heroTitle}
             </h1>
             <div className="mb-5 barlow text-lg text-white">
               {Array.isArray(hero.body) && <PortableText value={hero.body} />}
             </div>
-            <button className="btn green_btn">BLIV MEDLEM</button>
+            <Link href="/sign-up">
+              <button className="btn green_btn">BLIV MEDLEM</button>
+            </Link>
           </div>
         </div>
       </div>
