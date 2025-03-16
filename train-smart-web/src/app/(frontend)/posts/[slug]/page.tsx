@@ -36,7 +36,7 @@ export default async function Page({
           href="/posts"
           className="inline-flex items-center text-blue-600 hover:text-blue-800 hover:underline"
         >
-          <span className="mr-1">←</span> Back to posts
+          <span className="mr-1">←</span> Back to posts!!!
         </Link>
       </nav>
 
