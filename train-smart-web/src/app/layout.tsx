@@ -14,7 +14,6 @@ export default function RootLayout({
         <Suspense fallback={null}>
           <SanityLive />
         </Suspense>
-        <Navbar />
         {children}
       </body>
     </html>

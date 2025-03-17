@@ -1,4 +1,5 @@
 import { SanityLive } from "@/sanity/lib/live";
+import Navbar from "../components/Navbar";
 
 export default function FrontendLayout({
   children,
@@ -7,6 +8,7 @@ export default function FrontendLayout({
 }>) {
   return (
     <>
+      <Navbar />
       {children}
       <SanityLive />
     </>
