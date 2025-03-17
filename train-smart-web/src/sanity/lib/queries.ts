@@ -20,5 +20,6 @@ export const LATEST_POSTS_QUERY =
     _id,
     title,
     mainImage,
+    publishedAt,
     slug
 }`);
