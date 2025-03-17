@@ -14,3 +14,11 @@ export const POST_QUERY =
   "author": author->name,
   "categories": categories[]->title
 }`);
+
+export const LATEST_POSTS_QUERY =
+  defineQuery(`*[_type == "post" && defined(slug.current)] | order(publishedAt desc)[0...4]{
+    _id,
+    title,
+    mainImage,
+    slug
+}`);
