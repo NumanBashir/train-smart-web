@@ -339,7 +339,7 @@ export type POST_QUERYResult = {
   categories: Array<string | null> | null;
 } | null;
 // Variable: LATEST_POSTS_QUERY
-// Query: *[_type == "post" && defined(slug.current)] | order(publishedAt desc)[0...4]{    _id,    title,    mainImage,    slug}
+// Query: *[_type == "post" && defined(slug.current)] | order(publishedAt desc)[0...4]{    _id,    title,    mainImage,    publishedAt,    slug}
 export type LATEST_POSTS_QUERYResult = Array<{
   _id: string;
   title: string | null;
@@ -355,6 +355,7 @@ export type LATEST_POSTS_QUERYResult = Array<{
     alt?: string;
     _type: "image";
   } | null;
+  publishedAt: string | null;
   slug: Slug | null;
 }>;
 
@@ -364,6 +365,6 @@ declare module "@sanity/client" {
   interface SanityQueries {
     "*[_type == \"post\" && defined(slug.current)][0...12]{\n  _id, title, slug\n}": POSTS_QUERYResult;
     "*[_type == \"post\" && slug.current == $slug][0]{\n  title,\n  body,\n  mainImage,\n  publishedAt,\n  \"author\": author->name,\n  \"categories\": categories[]->title\n}": POST_QUERYResult;
-    "*[_type == \"post\" && defined(slug.current)] | order(publishedAt desc)[0...4]{\n    _id,\n    title,\n    mainImage,\n    slug\n}": LATEST_POSTS_QUERYResult;
+    "*[_type == \"post\" && defined(slug.current)] | order(publishedAt desc)[0...4]{\n    _id,\n    title,\n    mainImage,\n    publishedAt,\n    slug\n}": LATEST_POSTS_QUERYResult;
   }
 }
