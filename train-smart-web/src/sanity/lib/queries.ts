@@ -23,3 +23,9 @@ export const LATEST_POSTS_QUERY =
     publishedAt,
     slug
 }`);
+
+export const HERO_QUERY = defineQuery(`*[_type == "hero"][0] {
+  heroTitle,
+  body,
+  heroImage
+}`);
